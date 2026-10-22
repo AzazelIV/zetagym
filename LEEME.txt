@@ -1,0 +1,39 @@
+ZETA GYM — sitio web estilo social + Instagram automático + música ambiental
+
+CONTENIDO
+- index.html: página de Zeta Gym.
+- css/styles.css: estilos responsive.
+- js/main.js: menú, WhatsApp, feed de Instagram y reproductor de música.
+- netlify/functions/instagram-feed.mjs: función segura que consulta la API oficial de Instagram.
+- netlify.toml: configuración de publicación y funciones de Netlify.
+
+PUBLICAR EN NETLIFY
+1. Descomprimí el ZIP y subí la carpeta zetagym_web a un sitio de Netlify (o conectá el repositorio Git).
+2. La cuenta @zetagym.arg debe convertirse en profesional (Empresa o Creador). La API oficial no permite leer automáticamente una cuenta personal.
+3. En Meta for Developers, creá/configurá una app para Instagram API con Instagram Login y autorizá la cuenta profesional. Solicitá el permiso instagram_business_basic y obtené un token válido con acceso a esa cuenta.
+4. En Netlify: Site configuration / Environment variables, agregá:
+   INSTAGRAM_ACCESS_TOKEN = el token válido de la cuenta profesional
+   INSTAGRAM_API_VERSION = versión de Graph API habilitada para tu app (opcional; por defecto v23.0)
+5. Volvé a desplegar el sitio después de agregar/modificar variables de entorno.
+6. Probá https://TU-DOMINIO/.netlify/functions/instagram-feed. Debe devolver JSON con data. Si muestra error, revisá permisos, token y versión de API.
+
+CÓMO SE ACTUALIZA
+- La página solicita las últimas publicaciones al abrirse y vuelve a consultarlas cada 5 minutos mientras está abierta.
+- La nueva publicación aparecerá en la siguiente consulta una vez que Meta la exponga a la API. No es un webhook instantáneo, y el navegador debe estar abierto para actualizar la vista.
+- El feed muestra hasta 8 elementos y enlaza a los posts originales. Los enlaces y videos pueden depender de la disponibilidad de media_url de Meta.
+- Para seguridad, nunca pegues el token de Instagram en index.html, js/main.js ni en el repositorio público.
+
+MÚSICA ROCK
+- El audio está preparado para intentar reproducirse al entrar, una sola vez y sin repetición (loop desactivado).
+- El único control visible es un botón flotante discreto para pausar/reanudar. Si la canción terminó, no se reinicia desde el principio.
+- Los navegadores suelen bloquear el autoplay con sonido. Si ocurre, el botón permite iniciarla con un toque; ningún sitio puede garantizar sonido automático en todos los navegadores.
+- El ZIP no incluye una canción. Agregá una pista de rock con licencia comercial permitida como assets/rock-background.mp3.
+- No extraigas ni reproduzcas audio oculto de YouTube.
+
+DATOS CONSERVADOS
+Dueño y personal trainer: Ezequiel Acuña.
+Lunes a viernes: 08:00 a 12:00 hs y 14:00 a 21:00 hs.
+Sábados: 09:00 a 12:00 hs. Domingos: cerrado.
+Dirección: Chiclana 1276, Olavarría, Provincia de Buenos Aires.
+WhatsApp: +54 9 2284 535056.
+Instagram: https://www.instagram.com/zetagym.arg/

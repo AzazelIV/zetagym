@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0d0f" />
+  <meta name="description" content="Zeta Gym: musculación, powerlifting y entrenamiento personalizado con Ezequiel Acuña en Olavarría." />
+  <title>Zeta Gym | Entrená tu mejor versión</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Zeta Gym, inicio"><img src="assets/logo-zeta.png" alt="Logo Zeta Gym" /></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a class="active" href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#entrenamiento">Entrenamiento</a><a href="#instagram">Instagram</a><a href="#horarios">Horarios</a><a href="#ubicacion">Ubicación</a><a href="#contacto">Contacto</a>
+    </nav>
+    <a class="button button-red header-cta" href="#contacto"><span>✚</span> Entrená conmigo</a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <img class="hero-logo" src="assets/logo-zeta.png" alt="Zeta Gym" />
+        <p class="eyebrow">Gimnasio &amp; entrenamiento personal</p>
+        <h1>Tu mejor versión<br>empieza <em>acá</em></h1>
+        <div class="red-rule"></div>
+        <p class="hero-copy">Musculación, powerlifting y entrenamiento<br class="desktop-only"> personalizado.</p>
+        <a class="button button-red" href="#entrenamiento">Conocé más <span class="arrow">→</span></a>
+      </div>
+      <div class="hero-motto"><img src="assets/logo-zeta.png" alt=""/><p>Disciplina<br>hoy, resultados<br>mañana</p></div>
+    </section>
+
+    <section class="specialties section-light" id="entrenamiento">
+      <div class="section-heading"><span></span><h2>Especialidades</h2><span></span></div>
+      <div class="specialty-grid">
+        <article class="specialty-card"><div class="round-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M9 25h6v14H9zM17 18h7v28h-7zM27 27h10v10H27zM40 18h7v28h-7zM49 25h6v14h-6z"/></svg></div><h3>Musculación</h3><p>Mejorá tu fuerza, resistencia<br>y bienestar general.</p></article>
+        <article class="specialty-card"><div class="round-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 25h7v14H8zM17 17h8v30h-8zM27 28h10v8H27zM39 17h8v30h-8zM49 25h7v14h-7z"/></svg></div><h3>Powerlifting</h3><p>Entrenamiento específico<br>para llevar tu fuerza al máximo.</p></article>
+        <article class="specialty-card"><div class="round-icon person-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="17" r="10"/><path d="M13 53c0-12 7-19 19-19s19 7 19 19v3H13z"/><path class="cutout" d="M25 40h14v5H25zM28 45h8v11h-8z"/></svg></div><h3>Entrenamiento<br>personalizado</h3><p>Planes adaptados a tus objetivos,<br>con seguimiento constante.</p></article>
+      </div>
+      <div class="trainer-line" id="nosotros"><span></span><div><p>Dueño y personal trainer</p><h2>Ezequiel Acuña</h2></div><span></span></div>
+    </section>
+
+    <section class="info-section" id="horarios">
+      <div class="info-columns">
+        <article class="info-block hours-block"><div class="info-title"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18"/><path d="M24 12v13l9 5"/></svg><h2>Horarios de atención</h2></div>
+          <p><strong>Lunes a viernes:</strong><br>08:00 a 12:00 hs y 14:00 a 21:00 hs</p>
+          <p><strong>Sábados:</strong><br>09:00 a 12:00 hs</p>
+          <p><strong>Domingos:</strong><br>Cerrado</p>
+        </article>
+        <article class="info-block address-block" id="ubicacion"><div class="info-title"><svg class="pin-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 44S8 27 8 18a16 16 0 1 1 32 0c0 9-16 26-16 26z"/><circle cx="24" cy="18" r="5" class="pin-hole"/></svg><h2>Dirección</h2></div>
+          <p>Chiclana 1276,<br>Olavarría,<br>Provincia de Buenos Aires</p>
+          <a class="map-card" href="https://www.google.com/maps/search/?api=1&query=Chiclana+1276%2C+Olavarr%C3%ADa%2C+Buenos+Aires" target="_blank" rel="noopener" aria-label="Abrir ubicación de Zeta Gym en Google Maps">
+            <iframe title="Mapa de Chiclana 1276, Olavarría" loading="lazy" src="https://maps.google.com/maps?q=Chiclana%201276%2C%20Olavarr%C3%ADa%2C%20Buenos%20Aires&t=&z=15&ie=UTF8&iwloc=&output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe><span class="map-label">📍 Chiclana 1276 · Abrir Google Maps ↗</span>
+          </a>
+        </article>
+      </div>
+      <div class="info-photo" role="img" aria-label="Discos y barra de entrenamiento"><div class="photo-slogan">Disciplina<br><em>es libertad</em></div></div>
+    </section>
+
+    <section class="instagram-section" id="instagram">
+      <div class="instagram-inner">
+        <div class="section-heading instagram-heading"><span></span><h2>La comunidad Zeta</h2><span></span></div>
+        <p class="instagram-intro">Una comunidad que entrena, se supera y comparte el progreso. Mirá los Reels, videos y publicaciones de Zeta Gym sin salir de esta página.</p>
+        <div class="instagram-grid" id="instagram-feed" aria-live="polite">
+          <p class="feed-status">Cargando las últimas publicaciones de <a href="https://www.instagram.com/zetagym.arg/" target="_blank" rel="noopener noreferrer">@zetagym.arg</a>…</p>
+        </div>
+        <a class="button button-red instagram-follow" href="https://www.instagram.com/zetagym.arg/" target="_blank" rel="noopener noreferrer">Ver Instagram <span class="arrow">↗</span></a>
+        <p class="feed-note" id="instagram-feed-note">Las publicaciones se actualizan automáticamente cuando el servicio de Instagram está configurado.</p>
+      </div>
+    </section>
+
+
+    <section class="contact-band" id="contacto">
+      <div class="contact-inner"><div class="whatsapp-symbol">◔</div><div><p class="eyebrow">¿Empezamos?</p><h2>Tu próximo objetivo empieza hoy.</h2><p>Escribinos por WhatsApp y consultá por tu entrenamiento.</p></div><a class="button button-green whatsapp-link" href="https://api.whatsapp.com/send/?phone=5492284535056&amp;text=Hola%20Ezequiel%2C%20quiero%20consultar%20por%20los%20entrenamientos%20de%20Zeta%20Gym.&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener"><svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.2A12.5 12.5 0 0 0 5.2 22L3.5 28.5l6.7-1.7A12.5 12.5 0 1 0 16 3.2Zm0 22.7a10.1 10.1 0 0 1-5.1-1.4l-.4-.2-3.8 1 1-3.7-.3-.4A10.2 10.2 0 1 1 16 25.9Zm5.6-7.6c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.6s-.7-1.7-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.8 1.2 3.2 1.4 3.4a12.4 12.4 0 0 0 4.8 4.2c.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2.1-1.4s.3-1.3.2-1.4-.2-.2-.5-.4Z"/></svg> Contactanos por WhatsApp <span>→</span></a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#inicio"><img src="assets/logo-zeta.png" alt="Zeta Gym"/><span></span><small>Gimnasio &amp; entrenamiento personal</small></a>
+    <div class="social-links"><a class="social-instagram" href="https://www.instagram.com/zetagym.arg/" target="_blank" rel="noopener" aria-label="Instagram de Zeta Gym" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="ig-dot" cx="17.5" cy="6.7" r="1"/></svg></a><a class="social-whatsapp" href="https://api.whatsapp.com/send/?phone=5492284535056&amp;text=Hola%20Zeta%20Gym&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" aria-label="WhatsApp de Zeta Gym" title="WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.2A12.5 12.5 0 0 0 5.2 22L3.5 28.5l6.7-1.7A12.5 12.5 0 1 0 16 3.2Zm0 22.7a10.1 10.1 0 0 1-5.1-1.4l-.4-.2-3.8 1 1-3.7-.3-.4A10.2 10.2 0 1 1 16 25.9Zm5.6-7.6c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.6s-.7-1.7-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.8 1.2 3.2 1.4 3.4a12.4 12.4 0 0 0 4.8 4.2c.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2.1-1.4s.3-1.3.2-1.4-.2-.2-.5-.4Z"/></svg></a></div>
+    <p class="footer-slogan">Entrená · Superate · Lográ</p>
+    <p class="copyright">© <span id="year"></span> Zeta Gym · Olavarría</p>
+  </footer>
+  <audio id="rock-audio" preload="auto" src="assets/rock-background.mp3"></audio>
+  <button class="floating-music" id="rock-toggle" type="button" aria-label="Pausar música" aria-pressed="true" title="Pausar música"><span id="rock-toggle-icon" aria-hidden="true">Ⅱ</span><span class="floating-music-label" id="rock-toggle-label">Música</span></button>
+  <a class="floating-whatsapp whatsapp-link" href="https://api.whatsapp.com/send/?phone=5492284535056&amp;text=Hola%20Ezequiel%2C%20quiero%20consultar%20por%20los%20entrenamientos%20de%20Zeta%20Gym.&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp" title="Contactar por WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.2A12.5 12.5 0 0 0 5.2 22L3.5 28.5l6.7-1.7A12.5 12.5 0 1 0 16 3.2Zm0 22.7a10.1 10.1 0 0 1-5.1-1.4l-.4-.2-3.8 1 1-3.7-.3-.4A10.2 10.2 0 1 1 16 25.9Zm5.6-7.6c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.6s-.7-1.7-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.8 1.2 3.2 1.4 3.4a12.4 12.4 0 0 0 4.8 4.2c.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2.1-1.4s.3-1.3.2-1.4-.2-.2-.5-.4Z"/></svg></a>
+  <script src="js/main.js"></script>
+</body>
+</html>
